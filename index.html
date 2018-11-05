@@ -11,42 +11,51 @@
 
     <!-- Site theme -->
     <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Imprima|Noto+Serif:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 
     <!--  Place Custom Styles Below -->
     <style>
         body {
-            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-            color: black;
+            font-family: 'Imprima', sans-serif;
+            color: rgb(18, 18, 18);
+            font-size: medium;
         }
 
         h1 {
+            font-family: 'Noto Serif', serif;
             font-size: 24px;
             font-weight: bold;
+            color: rgb(18, 18, 18);
         }
 
         h2 {
             font-size: 20px;
+            color: rgb(18, 18, 18);
         }
 
         h3 {
             font-size: 16px;
+            color: rgb(18, 18, 18);
         }
 
         button {
-            background-color: orange;
+            background-color: rgb(209, 114, 0);
             border-radius: 5px;
             padding: 10px;
             color: white;
         }
 
         .inputLabel {
+            color: rgb(37, 25, 126);
             font-size: 14px;
             font-weight: bold;
         }
 
         input.inputField {
             padding: 5px;
-            border: 1px solid orange;
+            border: 1px solid rgb(35, 6, 66);
         }
 
         div.box {
@@ -57,37 +66,52 @@
         }
 
         #primary1 {
-            background-color: orange;
+            /* background-color: rgb(12, 41, 10); */
+            /* background-color: rgb(35, 74, 35); */
+            background-color: rgb(58, 94, 46);
+
         }
 
         #primary2 {
-            background-color: red;
+            background-color: rgb(209, 114, 0);
+            
         }
 
         #primary3 {
-            background-color: yellow;
+             /* background-color: rgb(37, 25, 126); */
+             background-color: rgb(35, 6, 66);
+             
+        }
+        
+        #primary4 { 
+            background-color: rgb(243, 255, 198);
+        } 
+
+        #primary5 {
+            /* background-color: rgb(217, 87, 0); */
+            background-color: rgb(130, 23, 0);
         }
 
         .warning {
-            background-color: yellow;
+            background-color: rgb(209, 114, 0);
             font-weight: bold;
-            color: black;
+            color:  rgb(18, 18, 18);
             padding: 10px;
             border-radius: 5px;
         }
 
         .danger {
-            background-color: red;
+            background-color: rgb(130, 23, 0);
             font-weight: bold;
-            color: white;
+            color: rgb(243, 255, 198);
             padding: 10px;
             border-radius: 5px;
         }
 
         .success {
-            background-color: green;
+            background-color: rgb(35, 74, 35);
             font-weight: bold;
-            color: white;
+            color: rgb(243, 255, 198);
             padding: 10px;
             border-radius: 5px;
         }
@@ -101,14 +125,14 @@
         }
 
         #footer {
-            border-top: 1px solid #dddddd;
+            border-top: 1px solid rgb(18, 18, 18);
             margin-top: 50px;
             padding: 10px;
             text-align: center;
         }
     </style>
 	<!-- Include script for font awesome icon library -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
 </head>
 
 <body>
@@ -163,8 +187,9 @@
                     <h1>
                         <a name="fonts"></a>Font</h1>
                 </div>
-                <p>My application utilizes the "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica,
-                    Arial, "sans-serif" font-family with black text.</p>
+                <p>My application uses the "Imprima", sans-serif font-family for body text. <br>
+                   It uses "Noto Serif", serif font-family for headings. <br>
+                   Both fonts use dark charcoal text.</p>
             </div>
             <div class="spacer">
                 <a href="#Top">Back to Top</a>
@@ -177,10 +202,12 @@
                     <h1>
                         <a name="colorTheme"></a>Color Theme</h1>
                 </div>
-                <p>My application incorporates the below color scheme in its interface.</p>
+                <p>My application's color scheme is below</p>
                 <div class="box" id="primary1"></div>
                 <div class="box" id="primary2"></div>
                 <div class="box" id="primary3"></div>
+                <div class="box" id="primary4"></div>
+                <div class="box" id="primary5"></div>
             </div>
             <div class="spacer">
                 <a href="#Top">Back to Top</a>
@@ -207,10 +234,10 @@
             <div>
                 <div class="page-header">
                     <h1>
-                        <a name="buttons"></a>Buttons</h1>
+                        <a name="button"></a>Buttons</h1>
                 </div>
-                <p>The application will feature buttons that contain the below color and shape:</p>
-                <button>My Button</button>
+                <p>The application will feature these buttons:</p>
+                <button>Order Now!</button>
             </div>
             <div class="spacer">
                 <a href="#Top">Back to Top</a>
@@ -223,7 +250,7 @@
                     <h1>
                         <a name="formElements"></a>Form Elements</h1>
                 </div>
-                <p>For the varous forms that the application will contain, it will contain input fields and labels with the below styling:</p>
+                <p>Form fields:</p>
                 <form>
                     <label for="name" class="inputLabel">Name</label>
                     <input type="input" id="name" class="inputField" value="">
@@ -240,10 +267,35 @@
                     <h1>
                         <a name="messages"></a>Messages</h1>
                 </div>
-                <p>For various completed tasks, application notifications will be presented to the user based.  The following contextual messages will be used.</p>
+                <p>Application notifications:</p>
                 <p class="warning">Warning!</p>
                 <p class="danger">Danger!</p>
                 <p class="success">Success!</p>
+            </div>
+            <div class="spacer">
+                <a href="#Top">Back to Top</a>
+            </div>
+            <!-- End User Messages -->
+
+            <!-- Icons -->
+            <div>
+                <div class="page-header">
+                    <h1>
+                        <a name="icons"></a>Icons</h1>
+                </div>
+                <p>This application can use the following icons:</p>
+                <span style="font-size: 3rem;">
+                    <span style="color: rgb(12, 41, 10);">
+                        <i class="fab fa-pagelines"></i>
+                        <i class="fas fa-leaf"></i>
+                    </span>
+                </span>
+                <span style="font-size: 3rem;">
+                    <span style="color: rgb(217, 87, 0);">
+                        <i class="fab fa-pagelines"></i>
+                        <i class="fas fa-leaf"></i>
+                    </span>
+                </span>
             </div>
             <div class="spacer">
                 <a href="#Top">Back to Top</a>
@@ -253,7 +305,7 @@
     </div>
     <div id="footer">
         <div class="container">
-            <p class="text-muted">Copyright My Style Guide</p>
+            <p class="text-muted">Forbidden Forest Farm Style Guide</p>
         </div>
     </div>
 </body>
